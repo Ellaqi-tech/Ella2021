@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fbfbff;
+    background: url("../img/")
+}
+* {
+    overflow: hidden;
+    font-size: 2vw;
+}
+a {
+    color: inherit;
+    background: transparent;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+h1 {
+    position: absolute;
+    background: transparent;
+    font-size: 1vw;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+}
+h2 {
+    text-align: right;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: whitesmoke;
+}
+span.skill {
+    font-weight: 600;
+}
+.portfolio-link {
+    text-decoration: underline;
+    font-weight: 600;
+}
+#box-container {
+    position: absolute;
+    background-image:  linear-gradient(to bottom, #363636, #050505);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 36vw;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 50px 100px -20px, rgba(0, 0, 0, 0.65) 0px 30px 60px -30px;
+}
+#text-container {
+    width: 46vw;
+    position: absolute;
+    top: 59%;
+    left: 60%;
+    color: whitesmoke;
+    transform: translate(-50%, -50%);
+}
+#text-container div.p-container p{
+    padding: 0 2vw;
+    width: 40vw;
+    border-top: .1vw solid whitesmoke;
+}
+#text-container div.p-container a {
+    text-decoration: underline;
+}
+#text-container div.p-container {
+    font-size: 0.9vw;
+    line-height: 2.5vw;
+    font-weight: 300;
+    color: whitesmoke;
+}
+.center {
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 3vw;
+}
+img#graybg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#graybg-mobile {
+    display: none;
+}
+.name {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.25em;
+    font-weight: bold;
+    background: transparent;
+}
+.title {
+    font-size: 0.85em;
+    font-weight: 300;
+    background: transparent;
+}
+.toptext {
+    font-size: 0.7em;
+    font-weight: 800;
+    line-height: 2em;
+    background: transparent;
+}
+#logo {
+    width: 5vw;
+    position: absolute;
+    right: 1.75%;
+    top: 3%;
+    z-index: 999;
+}
+p.quote {
+    width: 40vw;
+    position: absolute;
+    top: 5vw;
+    left: 33vw;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 2vw;
+    text-shadow: 1px 1px 5px black;
+}
+#backtohome {
+    position: absolute;
+    left: 2vw;
+    bottom: 1vw;
+    text-align: center;
+    line-height: 2vw;
+    color: whitesmoke;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px black;
+}
+#backtohome-mobile {
+    display: none;
+}
+.top-bio-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        overflow: scroll;
+    }
+    #box-container {
+        background-image:  linear-gradient(to bottom, #363636, #050505);
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.45) 0px 30px 60px -30px;
+    }
+    img#graybg {
+        display: none;
+    }
+    #graybg-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #text-container {
+        width: 90vw;
+        height: 140vw;
+        position: absolute;
+        top: 160vw;
+        left: 50%;
+        color: whitesmoke;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        overflow: hidden;
+    }
+    #text-container div.p-container p{
+        padding: 7vw;
+        width: 60vw;
+        height: 100vw;
+        border-top: none;
+        font-size: 3.5vw;
+        line-height: 6vw;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    p.quote {
+        width: 70vw;
+        position: absolute;
+        top: 35vw;
+        left: 16vw;
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 4vw;
+        line-height: 7vw;
+        text-shadow: 1px 1px 5px black;
+    }
+    .center {
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        text-decoration: underline;
+        font-weight: 600;
+        cursor: pointer;
+        line-height: 6vw;
+    }
+    #logo {
+        display: none;
+    } 
+    h1 {
+        font-size: 2vw;
+        display: none;
+    }
+    h2 {
+        font-size: 6vw;
+        text-shadow: 1px 1px 3px black;
+        text-align: center;
+    }
+    #backtohome {
+        position: static;
+        font-size: 2.5vw;
+        text-shadow: 1px 1px 3px black;
+        display: none;
+    }
+    #backtohome-mobile {
+        display: block;
+        font-size: 3.5vw;
+        line-height: 5vw;
+        padding-top: 10vw;
+    }
+    .top-bio-mobile {
+        display: block;
+        font-size: 3vw;
+        text-align: right;
+        line-height: 4vw;
+        margin-top: -10vw;
+    }
+}
+@media screen and (max-width: 360px) {
+
+}
